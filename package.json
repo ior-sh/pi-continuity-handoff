@@ -1,0 +1,48 @@
+{
+  "name": "pi-continuity-handoff",
+  "version": "0.1.0",
+  "description": "Durable, project-aware handoffs for the Pi coding agent. Snapshot the real state at session start, write one Markdown handoff, no session switching.",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "handoff",
+    "continuity",
+    "session",
+    "context",
+    "git",
+    "worktree"
+  ],
+  "license": "MIT",
+  "author": "Ivan Outeiral <66072409+ior-sh@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ior-sh/pi-continuity-handoff.git"
+  },
+  "homepage": "https://github.com/ior-sh/pi-continuity-handoff#readme",
+  "bugs": {
+    "url": "https://github.com/ior-sh/pi-continuity-handoff/issues"
+  },
+  "type": "module",
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/continuity-handoff.ts"
+    ]
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    }
+  }
+}
